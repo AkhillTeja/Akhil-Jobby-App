@@ -146,9 +146,7 @@ class Jobs extends Component {
         className="jobs-failure-img"
       />
 
-      <h1 className="jobs-failure-heading-text">
-        Oops! Something Went Wrong
-      </h1>
+      <h1 className="jobs-failure-heading-text">Oops! Something Went Wrong</h1>
 
       <p className="jobs-failure-description">
         We cannot seem to find the page you are looking for.

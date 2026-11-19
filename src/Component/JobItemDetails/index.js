@@ -171,18 +171,13 @@ class JobItemDetails extends Component {
 
           <ul className="skills-list">
             {skills.map(skill => (
-              <SkillsCard
-                key={skill.name}
-                skillDetails={skill}
-              />
+              <SkillsCard key={skill.name} skillDetails={skill} />
             ))}
           </ul>
 
           <div className="life-at-company-container">
             <div className="life-at-company-content">
-              <h1 className="life-at-company-heading">
-                Life at Company
-              </h1>
+              <h1 className="life-at-company-heading">Life at Company</h1>
 
               <p className="life-at-company-description">
                 {lifeAtCompany.description}
@@ -201,10 +196,7 @@ class JobItemDetails extends Component {
 
         <ul className="similar-jobs-list">
           {similarJobsData.map(each => (
-            <SimilarJobItem
-              key={each.id}
-              jobDetails={each}
-            />
+            <SimilarJobItem key={each.id} jobDetails={each} />
           ))}
         </ul>
       </div>
@@ -219,29 +211,20 @@ class JobItemDetails extends Component {
         className="failure-img"
       />
 
-      <h1 className="failure-heading">
-        Oops! Something Went Wrong
-      </h1>
+      <h1 className="failure-heading">Oops! Something Went Wrong</h1>
 
       <p className="failure-description">
         We cannot seem to find the page you are looking for.
       </p>
 
-      <button
-        type="button"
-        className="retry-button"
-        onClick={this.getJobData}
-      >
+      <button type="button" className="retry-button" onClick={this.getJobData}>
         Retry
       </button>
     </div>
   )
 
   renderLoadingView = () => (
-    <div
-      className="loader-container"
-      data-testid="loader"
-    >
+    <div className="loader-container" data-testid="loader">
       <ThreeDots
         height="50"
         width="50"

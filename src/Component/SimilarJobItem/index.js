@@ -5,11 +5,22 @@ import './index.css'
 
 const SimilarJobItem = props => {
   const {jobDetails} = props
-  const {companyLogoUrl, employmentType, jobDescription, location, rating, title} = jobDetails
+  const {
+    companyLogoUrl,
+    employmentType,
+    jobDescription,
+    location,
+    rating,
+    title,
+  } = jobDetails
   return (
     <li className="similar-job-item">
       <div className="logo-title-container">
-        <img src={companyLogoUrl} alt="similar job company logo" className="company-logo" />
+        <img
+          src={companyLogoUrl}
+          alt="similar job company logo"
+          className="company-logo"
+        />
         <div className="title-rating-container">
           <h1 className="title-heading">{title}</h1>
           <div className="rating-container">

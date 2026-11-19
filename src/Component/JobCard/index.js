@@ -6,14 +6,27 @@ import './index.css'
 
 const JobCard = props => {
   const {jobDetails} = props
-  const {companyLogoUrl, employmentType, id, jobDescription, location, packagePerAnnum, rating, title} = jobDetails
+  const {
+    companyLogoUrl,
+    employmentType,
+    id,
+    jobDescription,
+    location,
+    packagePerAnnum,
+    rating,
+    title,
+  } = jobDetails
 
   return (
     <li className="job-item">
       <Link to={`/jobs/${id}`} className="link-item">
         <div className="logo-title-location-container">
           <div className="logo-title-container">
-            <img src={companyLogoUrl} alt="company logo" className="company-logo" />
+            <img
+              src={companyLogoUrl}
+              alt="company logo"
+              className="company-logo"
+            />
             <div className="title-rating-container">
               <h1 className="title-heading">{title}</h1>
               <div className="rating-container">

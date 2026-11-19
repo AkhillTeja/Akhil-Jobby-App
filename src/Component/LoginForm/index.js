@@ -41,16 +41,40 @@ class LoginForm extends Component {
     return (
       <div className="login-form-container">
         <form className="form-container" onSubmit={this.submitForm}>
-          <img src="https://assets.ccbp.in/frontend/react-js/logo-img.png" alt="website logo" className="login-website-logo" />
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+            alt="website logo"
+            className="login-website-logo"
+          />
           <div className="input-container">
-            <label className="input-label" htmlFor="username">USERNAME</label>
-            <input type="text" id="username" className="username-input-field" value={username} onChange={this.onChangeUsername} placeholder="Username" />
+            <label className="input-label" htmlFor="username">
+              USERNAME
+            </label>
+            <input
+              type="text"
+              id="username"
+              className="username-input-field"
+              value={username}
+              onChange={this.onChangeUsername}
+              placeholder="Username"
+            />
           </div>
           <div className="input-container">
-            <label className="input-label" htmlFor="password">PASSWORD</label>
-            <input type="password" id="password" className="password-input-field" value={password} onChange={this.onChangePassword} placeholder="Password" />
+            <label className="input-label" htmlFor="password">
+              PASSWORD
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="password-input-field"
+              value={password}
+              onChange={this.onChangePassword}
+              placeholder="Password"
+            />
           </div>
-          <button type="submit" className="login-button">Login</button>
+          <button type="submit" className="login-button">
+            Login
+          </button>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}
         </form>
       </div>

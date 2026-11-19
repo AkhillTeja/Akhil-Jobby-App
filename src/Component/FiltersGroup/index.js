@@ -24,8 +24,15 @@ const FiltersGroup = props => {
       <ul className="filters-list">
         {employmentTypesList.map(eachType => (
           <li className="filter-item" key={eachType.employmentTypeId}>
-            <input type="checkbox" id={eachType.employmentTypeId} className="check-input" onChange={() => changeEmployeeType(eachType.employmentTypeId)} />
-            <label htmlFor={eachType.employmentTypeId} className="check-label">{eachType.label}</label>
+            <input
+              type="checkbox"
+              id={eachType.employmentTypeId}
+              className="check-input"
+              onChange={() => changeEmployeeType(eachType.employmentTypeId)}
+            />
+            <label htmlFor={eachType.employmentTypeId} className="check-label">
+              {eachType.label}
+            </label>
           </li>
         ))}
       </ul>
@@ -38,8 +45,16 @@ const FiltersGroup = props => {
       <ul className="filters-list">
         {salaryRangesList.map(eachRange => (
           <li className="filter-item" key={eachRange.salaryRangeId}>
-            <input type="radio" name="salary" id={eachRange.salaryRangeId} className="check-input" onChange={() => changeSalaryRange(eachRange.salaryRangeId)} />
-            <label htmlFor={eachRange.salaryRangeId} className="check-label">{eachRange.label}</label>
+            <input
+              type="radio"
+              name="salary"
+              id={eachRange.salaryRangeId}
+              className="check-input"
+              onChange={() => changeSalaryRange(eachRange.salaryRangeId)}
+            />
+            <label htmlFor={eachRange.salaryRangeId} className="check-label">
+              {eachRange.label}
+            </label>
           </li>
         ))}
       </ul>

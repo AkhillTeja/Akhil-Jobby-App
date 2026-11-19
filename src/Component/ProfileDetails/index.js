@@ -68,12 +68,12 @@ class ProfileDetails extends Component {
 
   renderLoadingView = () => (
     <div className="loader-container" data-testid="loader">
-    <ThreeDots
-  height="50"
-  width="50"
-  color="#ffffff"
-  ariaLabel="three-dots-loading"
-/>
+      <ThreeDots
+        height="50"
+        width="50"
+        color="#ffffff"
+        ariaLabel="three-dots-loading"
+      />
     </div>
   )
 
